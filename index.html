@@ -22,23 +22,25 @@
                 <img src="./images/moon_icon.png" alt="moon" class="w-6 cursor-pointer">
             </button>
             <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact <img src="./images/arrow-icon.png" class="w-3"></a>
-            <button class="block md:hidden ml-3">
+            <button class="block md:hidden ml-3" onclick="openMenu()">
                 <img src="./images/menu-black.png" alt="" class="w-6 cursor-pointer">
             </button>
         </div>
     <!-- ----------mobile menu --------------- -->
      <ul id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-3">
-        <div class="absolute top-6 right-6">
+        <div class="absolute top-6 right-6" onclick="closeMenu()">
             <button>
                 <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer">
             </button>
         </div>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#top" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
      </ul>
 
     </nav>
+
+    <script src="./script.js"></script>
 </body>
 </html>
